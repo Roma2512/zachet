@@ -19,9 +19,8 @@ internal static class Program
         // TODO 8: Построить pipeline обнаружение → копирование → проверка через Channel.
         // TODO 9: Добавить JSON-журнал.
         // TODO 10: Добавить запуск внешней утилиты и ожидание её завершения через Process.
-        
+
         Console.WriteLine("Зачётный проект 05: Менеджер резервного копирования");
-        Console.WriteLine(new string('=', 64));
 
         using var cts = new CancellationTokenSource();
 
@@ -34,7 +33,6 @@ internal static class Program
         var service = new ProjectService();
         await service.RunAsync(cts.Token);
 
-        Console.WriteLine();
         Console.WriteLine("Нажмите Enter для завершения.");
         Console.ReadLine();
     }

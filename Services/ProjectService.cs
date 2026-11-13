@@ -40,8 +40,6 @@ public sealed class ProjectService
         Directory.CreateDirectory(destinationDirectory);
 
         // TODO 10: Добавить запуск внешней утилиты и ожидание её завершения через Process.
-        Console.WriteLine();
-        Console.WriteLine("--- Задание 10: запуск внешней утилиты ---");
         var runner = new ExternalToolRunner();
         try
         {
@@ -57,7 +55,7 @@ public sealed class ProjectService
 
         // TODO 1: Получить список файлов исходного каталога.
         Console.WriteLine();
-        Console.WriteLine("--- Задание 1: обнаружение файлов ---");
+        Console.WriteLine("Обнаружение файлов");
         var discovery = new FileDiscoveryService();
         var files = discovery.Discover(sourceDirectory);
         Console.WriteLine($"[Discovery] Найдено файлов: {files.Count}");
@@ -72,7 +70,7 @@ public sealed class ProjectService
 
         // TODO 2: Реализовать последовательное копирование.
         Console.WriteLine();
-        Console.WriteLine("--- Задание 2: последовательное копирование ---");
+        Console.WriteLine("Последовательное копирование");
         var seqDestination = Path.Combine(destinationDirectory, "sequential");
         Directory.CreateDirectory(seqDestination);
 
@@ -95,8 +93,6 @@ public sealed class ProjectService
 
         // TODO 8: Построить pipeline обнаружение → копирование → проверка через Channel.
         // TODO 9: Добавить JSON-журнал.
-        Console.WriteLine();
-        Console.WriteLine("--- Задания 3–9: pipeline (Channel + SemaphoreSlim + SHA256 + JSON) ---");
         var pipelineDestination = Path.Combine(destinationDirectory, "pipeline");
         Directory.CreateDirectory(pipelineDestination);
 
