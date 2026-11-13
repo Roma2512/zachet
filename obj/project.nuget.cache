@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "809nIUX0ie8=",
+  "success": true,
+  "projectFilePath": "/home/roma/Документы/Variant05/BackupManager.csproj",
+  "expectedPackageFiles": [
+    "/home/roma/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.21/microsoft.aspnetcore.app.ref.9.0.21.nupkg.sha512",
+    "/home/roma/.nuget/packages/microsoft.netcore.app.host.linux-x64/9.0.21/microsoft.netcore.app.host.linux-x64.9.0.21.nupkg.sha512"
+  ],
+  "logs": []
+}
